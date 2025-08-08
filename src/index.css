@@ -132,6 +132,23 @@ All colors MUST be HSL.
   .glow-effect {
     @apply shadow-glow;
   }
+
+  /* RTL Styles */
+  [dir="rtl"] .text-left {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .text-right {
+    text-align: left;
+  }
+  
+  [dir="rtl"] .justify-start {
+    justify-content: flex-end;
+  }
+  
+  [dir="rtl"] .justify-end {
+    justify-content: flex-start;
+  }
 }
 
 @keyframes float {

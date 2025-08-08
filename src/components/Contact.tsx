@@ -107,7 +107,7 @@ const Contact = () => {
           <div>
             <Card className="card-elegant p-8">
               <div className="flex items-center mb-6">
-                <div className="p-3 rounded-lg bg-gradient-primary text-primary-foreground mr-4">
+                <div className="p-3 rounded-lg bg-gradient-primary text-primary-foreground ml-4">
                   <MessageCircle className="h-6 w-6" />
                 </div>
                 <h3 className="font-playfair text-2xl font-semibold text-foreground">
@@ -189,7 +189,7 @@ const Contact = () => {
                     </>
                   ) : (
                     <>
-                      <Send className="ml-2 h-5 w-5" />
+                      <Send className="mr-2 h-5 w-5" />
                       إرسال الرسالة
                     </>
                   )}
@@ -209,7 +209,7 @@ const Contact = () => {
                 {contactInfo.map((info, index) => (
                   <Card key={index} className="card-elegant p-6 hover:shadow-glow transition-all duration-300 group">
                     <div className="flex items-start">
-                      <div className="p-3 rounded-lg bg-gradient-primary text-primary-foreground mr-4 group-hover:scale-110 transition-transform duration-300">
+                      <div className="p-3 rounded-lg bg-gradient-primary text-primary-foreground ml-4 group-hover:scale-110 transition-transform duration-300">
                         <info.icon className="h-6 w-6" />
                       </div>
                       <div>
@@ -266,7 +266,7 @@ const Contact = () => {
                   'دعم مجاني بعد التسليم'
                 ].map((item, index) => (
                   <div key={index} className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-primary ml-3 flex-shrink-0" />
                     <span className="font-poppins text-sm text-foreground">
                       {item}
                     </span>

@@ -38,22 +38,25 @@ const Header = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
-              <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase())}
-                className="font-poppins text-foreground hover:text-primary transition-colors duration-200 relative group"
-              >
-                {item}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
-              </button>
-            ))}
+          <div className="hidden md:flex items-center space-x-reverse space-x-8">
+            {['الرئيسية', 'عني', 'المهارات', 'المشاريع', 'التواصل'].map((item, index) => {
+              const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+              return (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(sections[index])}
+                  className="font-poppins text-foreground hover:text-primary transition-colors duration-200 relative group"
+                >
+                  {item}
+                  <span className="absolute -bottom-1 right-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
+                </button>
+              );
+            })}
             <Button 
               onClick={() => scrollToSection('contact')}
               className="hero-button font-poppins"
             >
-              Get In Touch
+              تواصل معي
             </Button>
           </div>
 
@@ -70,20 +73,23 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-4 bg-card/95 backdrop-blur-md rounded-lg shadow-elegant animate-fade-in-up">
             <div className="flex flex-col space-y-4 px-4">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
-                  className="font-poppins text-foreground hover:text-primary transition-colors duration-200 text-left py-2"
-                >
-                  {item}
-                </button>
-              ))}
+              {['الرئيسية', 'عني', 'المهارات', 'المشاريع', 'التواصل'].map((item, index) => {
+                const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+                return (
+                  <button
+                    key={item}
+                    onClick={() => scrollToSection(sections[index])}
+                    className="font-poppins text-foreground hover:text-primary transition-colors duration-200 text-right py-2"
+                  >
+                    {item}
+                  </button>
+                );
+              })}
               <Button 
                 onClick={() => scrollToSection('contact')}
                 className="hero-button font-poppins mt-4"
               >
-                Get In Touch
+                تواصل معي
               </Button>
             </div>
           </div>

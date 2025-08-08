@@ -95,7 +95,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <Card key={index} className="card-elegant p-6 hover:shadow-glow transition-all duration-300">
               <div className="flex items-center mb-6">
-                <div className="p-3 rounded-lg bg-gradient-primary text-primary-foreground mr-4">
+                <div className="p-3 rounded-lg bg-gradient-primary text-primary-foreground ml-4">
                   <category.icon className="h-6 w-6" />
                 </div>
                 <h3 className="font-playfair text-xl font-semibold text-foreground">

@@ -50,14 +50,14 @@ const Hero = () => {
                 className="hero-button font-poppins text-lg px-8 py-6"
               >
                 مشاهدة أعمالي
-                <ArrowDown className="ml-2 h-5 w-5" />
+                <ArrowDown className="mr-2 h-5 w-5" />
               </Button>
               
               <Button 
                 variant="outline" 
                 className="font-poppins text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               >
-                <Download className="mr-2 h-5 w-5" />
+                <Download className="ml-2 h-5 w-5" />
                 تحميل السيرة الذاتية
               </Button>
             </div>

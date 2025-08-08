@@ -28,7 +28,7 @@ const Footer = () => {
                 className="font-poppins hover:text-accent transition-colors duration-200 relative group"
               >
                 {link}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 right-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </div>
@@ -52,7 +52,7 @@ const Footer = () => {
         <Button
           onClick={scrollToTop}
           size="icon"
-          className="fixed bottom-6 right-6 bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow z-50"
+          className="fixed bottom-6 left-6 bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow z-50"
           aria-label="العودة للأعلى"
         >
           <ArrowUp className="h-5 w-5" />
