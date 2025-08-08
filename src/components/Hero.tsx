@@ -23,7 +23,7 @@ const Hero = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-background/20 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
       
       {/* Content */}
       <div className="container mx-auto px-6 relative z-10">
@@ -31,7 +31,7 @@ const Hero = () => {
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
-              <p className="font-poppins text-lg text-muted-foreground animate-fade-in-up">
+              <p className="font-poppins text-lg text-white/90 animate-fade-in-up">
                 مرحباً، أنا
               </p>
               
@@ -39,7 +39,7 @@ const Hero = () => {
                 مصممة إبداعية
               </h1>
               
-              <p className="font-poppins text-xl text-muted-foreground max-w-lg animate-fade-in-up delay-400">
+              <p className="font-poppins text-xl text-white/80 max-w-lg animate-fade-in-up delay-400">
                 أحول الأفكار إلى تصاميم استثنائية تجمع بين الجمال والوظائف العملية
               </p>
             </div>
@@ -63,7 +63,7 @@ const Hero = () => {
             </div>
 
             <div className="flex items-center justify-center lg:justify-start gap-6 pt-8 animate-fade-in-up delay-800">
-              <div className="flex items-center gap-2 text-muted-foreground">
+              <div className="flex items-center gap-2 text-white/70">
                 <Mail className="h-5 w-5" />
                 <span className="font-poppins">hello@portfolio.com</span>
               </div>
@@ -89,7 +89,7 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in-up delay-1000">
         <div className="flex flex-col items-center animate-bounce">
-          <span className="font-poppins text-sm text-muted-foreground mb-2">مرر للأسفل</span>
+          <span className="font-poppins text-sm text-white/70 mb-2">مرر للأسفل</span>
           <ArrowDown className="h-6 w-6 text-primary" />
         </div>
       </div>
